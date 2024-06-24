@@ -1,0 +1,17 @@
+
+k
+java:S1104"UMake instancia a static final constant or non-public and provide accessors if needed.(ó–ôÇ
+d
+java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(ô®¿5
+o
+java:S1104"TMake diaFecha a static final constant or non-public and provide accessors if needed.(Œå¿üÿÿÿÿ
+j
+java:S1104"TMake mesFecha a static final constant or non-public and provide accessors if needed.(ıÓ–Ø
+o
+java:S1104"TMake anoFecha a static final constant or non-public and provide accessors if needed.(ÑåÀƒıÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢ïW
+œ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼Œ¼öùÿÿÿÿ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(¨Şû¹
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(îáï
+N	java:S106X"9Replace this use of System.out or System.err by a logger.(ØÚÚ«

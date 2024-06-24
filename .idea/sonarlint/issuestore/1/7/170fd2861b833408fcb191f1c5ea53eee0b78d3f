@@ -1,0 +1,61 @@
+
+n
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(±ÈÚD
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜÏ¡˜
+o
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(òÏß
+i
+java:S1192Î"RDefine a constant instead of duplicating this literal "//*/span[text()='" 6 times.(ÚÒ÷Ì
+€
+java:S13192"jThe type of "nombreLoteria" should be an interface such as "Map" rather than the implementation "HashMap".(òÏß
+h
+java:S1104"SMake Loteria a static final constant or non-public and provide accessors if needed.(±ÈÚD
+n
+java:S1104"XMake numerosDeHoy a static final constant or non-public and provide accessors if needed.(äÔ¯Õ
+h
+java:S1104"RMake fechas a static final constant or non-public and provide accessors if needed.(ÜÏ¡˜
+n
+java:S1104"XMake primerPremio a static final constant or non-public and provide accessors if needed.(âàÇ¾
+o
+java:S1104"YMake segundoPremio a static final constant or non-public and provide accessors if needed.(¢Ëè
+n
+java:S1104"XMake tercerPremio a static final constant or non-public and provide accessors if needed.(«¼‰
+j
+java:S1104"OMake dia a static final constant or non-public and provide accessors if needed.(Øã¶üşÿÿÿÿ
+e
+java:S1104"OMake mes a static final constant or non-public and provide accessors if needed.(˜“À´
+k
+java:S1104 "PMake year a static final constant or non-public and provide accessors if needed.(ôé»Ëıÿÿÿÿ
+l
+java:S1104""VMake despuesDel a static final constant or non-public and provide accessors if needed.(à•óõ
+p
+java:S1104$"UMake diaSemana a static final constant or non-public and provide accessors if needed.(Öê¥İøÿÿÿÿ
+o
+java:S1104&"YMake fechaBusqueda a static final constant or non-public and provide accessors if needed.(ÕÖÉ¿
+j
+java:S1104("TMake diaAntes a static final constant or non-public and provide accessors if needed.(Ñº¥¡
+s
+java:S1104*"XMake fechaLoteria a static final constant or non-public and provide accessors if needed.(ö‡«£ùÿÿÿÿ
+k
+java:S1104,"VMake fechaAntes a static final constant or non-public and provide accessors if needed.(¹Õú`
+o
+java:S11042"YMake nombreLoteria a static final constant or non-public and provide accessors if needed.(òÏß
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Òß–íÿÿÿÿÿ
+f	java:S116"RRename this field "Loteria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÈÚD
+x
+java:S1450."]Remove the "diaMesBusqueda" field and declare it as a local variable in the relevant methods.(¸ïáÎÿÿÿÿÿ
+7
+java:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ
+]	java:S125="<This block of commented-out lines of code should be removed.(“÷©ıúÿÿÿÿ8ô¶¡»„2
+]	java:S125K"<This block of commented-out lines of code should be removed.(ïĞ—ôıÿÿÿÿ8ªŞ¡»„2
+j	java:S100´"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ½ÛE8ûª»„2
+o
+java:S3776´"RRefactor this method to reduce its Cognitive Complexity from 61 to the 15 allowed.(õ½ÛE8üª»„2
+c
+java:S1854Ò"ERemove this useless assignment to local variable "msjRetrasoBillete".(™²éÂ8ÿª»„2
+T
+java:S1481Ò"6Remove this unused "msjRetrasoBillete" local variable.(™²éÂ8Œª»„2
+Y	java:S125ß"<This block of commented-out lines of code should be removed.(“İôØ8’ª»„2
+Y	java:S125£"<This block of commented-out lines of code should be removed.(¨†êÓ8¢ª»„2
+U	java:S106·"9Replace this use of System.out or System.err by a logger.(À®ù8¨ª»„2

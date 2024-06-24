@@ -14,7 +14,7 @@ public class GuardarNumeros extends BaseTest {
     public void guardarNumeros() throws InterruptedException {
         loteriaPage  = new LoteriaPage();
         loteriaPage.BuscarNumerosGanadores(getDriver());
-        HelperFile.getInstance().createFile(System.getProperty("user.dir") + "\\src\\main\\resources\\numero\\ResultadosLoterias", loteriaPage.numerosDeHoy.toString(), "txt");
+        HelperFile.getInstance().createFile(System.getProperty("user.dir") + "\\src\\main\\resources\\numeros\\ResultadosLoterias", loteriaPage.numerosDeHoy.toString(), "txt");
 
     }
 

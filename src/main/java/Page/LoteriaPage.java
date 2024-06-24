@@ -17,7 +17,7 @@ public class LoteriaPage {
 
     public List<String> Loteria = new ArrayList<String>();
 
-    public List<String> numerosDeHoy = new ArrayList<String>();
+    public StringBuilder numerosDeHoy = new StringBuilder();
 
     public List<String> fechas = new ArrayList<String>();
     public String primerPremio;
@@ -45,6 +45,8 @@ public class LoteriaPage {
 
     private String diaMesBusqueda;
 
+    private static final int TIME_WAIT = 30;
+
     public HashMap<String, String> nombreLoteria = new HashMap<String, String>();
 
     public LoteriaPage() {
@@ -56,12 +58,12 @@ public class LoteriaPage {
         Loteria.add("Quiniela Loteka");
         Loteria.add("New York 3:30");
         Loteria.add("New York 11:30");
-        Loteria.add("La Primera");
+   /*     Loteria.add("La Primera");
         Loteria.add("Florida Día");
         Loteria.add("Florida Noche");
 
         Loteria.add("La Suerte MD");
-        Loteria.add("Quiniela");
+        Loteria.add("Quiniela");*/
 
         nombreLoteria.put("Gana Más", "nacional dia");
         nombreLoteria.put("Lotería Nacional", "nacional noche");
@@ -70,112 +72,114 @@ public class LoteriaPage {
         nombreLoteria.put("Quiniela Loteka", "loteka");
         nombreLoteria.put("New York 3:30", "new york dia");
         nombreLoteria.put("New York 11:30", "new york noche");
-        nombreLoteria.put("Florida Día", "florida dia");
+/*        nombreLoteria.put("Florida Día", "florida dia");
         nombreLoteria.put("Florida Noche", "florida noche");
         nombreLoteria.put("La Primera", "la primera");
         nombreLoteria.put("La Suerte MD", "la suerte");
-        nombreLoteria.put("Quiniela", "loteria dominicana");
+        nombreLoteria.put("Quiniela", "loteria dominicana");*/
 
+        fechas.add("01-01-2024");
+        fechas.add("02-01-2024");
+        fechas.add("03-01-2024");
+        fechas.add("04-01-2024");
+        fechas.add("05-01-2024");
+        fechas.add("06-01-2024");
+        fechas.add("07-01-2024");
+        fechas.add("08-01-2024");
+        fechas.add("09-01-2024");
+        fechas.add("10-01-2024");
+        fechas.add("11-01-2024");
+        fechas.add("12-01-2024");
+        fechas.add("13-01-2024");
+        fechas.add("14-01-2024");
+        fechas.add("15-01-2024");
+        fechas.add("16-01-2024");
+        fechas.add("17-01-2024");
+        fechas.add("18-01-2024");
+        fechas.add("19-01-2024");
+        fechas.add("20-01-2024");
 
-     /*   fechas.add("22-01-2022");
-        fechas.add("27-12-2022");
-        fechas.add("12-12-2022");
-        fechas.add("11-12-2022");
-        fechas.add("09-12-2022");
+        fechas.add("21-01-2024");
+        fechas.add("22-01-2024");
+        fechas.add("23-01-2024");
+        fechas.add("24-01-2024");
+        fechas.add("25-01-2024");
+        fechas.add("26-01-2024");
+        fechas.add("27-01-2024");
+        fechas.add("28-01-2024");
+        fechas.add("29-01-2024");
+        fechas.add("30-01-2024");
+        fechas.add("31-01-2024");
 
-        fechas.add("18-09-2022");
-        fechas.add("28-03-2021");
-        fechas.add("16-07-2021");*/
+        fechas.add("01-02-2024");
+        fechas.add("02-02-2024");
+        fechas.add("03-02-2024");
+        fechas.add("04-02-2024");
+        fechas.add("05-02-2024");
+        fechas.add("06-02-2024");
+        fechas.add("07-02-2024");
+        fechas.add("08-02-2024");
+        fechas.add("09-02-2024");
+        fechas.add("10-02-2024");
+        fechas.add("11-02-2024");
+        fechas.add("12-02-2024");
+        fechas.add("13-02-2024");
+        fechas.add("14-02-2024");
+        fechas.add("15-02-2024");
+        fechas.add("16-02-2024");
+        fechas.add("17-02-2024");
+        fechas.add("18-02-2024");
+        fechas.add("19-02-2024");
+        fechas.add("20-02-2024");
 
-       /* fechas.add("24-07-2018");
-        fechas.add("23-07-2018");
-        fechas.add("22-07-2018");
-        fechas.add("21-07-2018");
-        fechas.add("20-07-2018");
-        fechas.add("19-07-2018");
-        fechas.add("18-07-2018");
-        fechas.add("17-07-2018");
-        fechas.add("16-07-2018");
-        fechas.add("15-07-2018");
-        fechas.add("14-07-2018");
-        fechas.add("13-07-2018");*/
+        fechas.add("21-02-2024");
+        fechas.add("22-02-2024");
+        fechas.add("23-02-2024");
+        fechas.add("24-02-2024");
+        fechas.add("25-02-2024");
+        fechas.add("26-02-2024");
+        fechas.add("27-02-2024");
+        fechas.add("28-02-2024");
+        fechas.add("29-02-2024");
 
-
-
-        /*
-        fechas.add("15-10-2020");
-        fechas.add("16-10-2020");
-        fechas.add("17-10-2020");
-        fechas.add("18-10-2020");
-        fechas.add("19-10-2020");
-        fechas.add("20-10-2020");
-        fechas.add("21-10-2020");
-        fechas.add("22-10-2020");
-        fechas.add("23-10-2020");
-        fechas.add("24-10-2020");
-
-        fechas.add("25-10-2020");
-        fechas.add("26-10-2020");
-        fechas.add("27-10-2020");
-        fechas.add("28-10-2020");
-        fechas.add("29-10-2020");
-        fechas.add("30-10-2020");
-        fechas.add("31-10-2020");
-        fechas.add("01-11-2020");
-        fechas.add("02-11-2020");
-        fechas.add("03-11-2020");
-        fechas.add("04-11-2020");
-        fechas.add("05-11-2020");
-
-        fechas.add("06-11-2020");
-        fechas.add("07-11-2020");
-        fechas.add("08-11-2020");
-        fechas.add("09-11-2020");
-        fechas.add("10-11-2020");
-        fechas.add("11-11-2020");
-        fechas.add("12-11-2020");
-
-        fechas.add("13-11-2020");
-        fechas.add("14-11-2020");
-        fechas.add("15-11-2020");
-        fechas.add("16-11-2020");
-        fechas.add("17-11-2020");
-        fechas.add("18-11-2020");
-        fechas.add("19-11-2020");
-        fechas.add("20-11-2020");
-        fechas.add("21-11-2020");
-        fechas.add("22-11-2020");
-        fechas.add("23-11-2020");
-        fechas.add("24-11-2020");
-
-        fechas.add("25-11-2020");
-        fechas.add("26-11-2020");
-        fechas.add("27-11-2020");
-        fechas.add("28-11-2020");
-        fechas.add("29-11-2020");
-        fechas.add("30-11-2020");
-        //fechas.add("31-07-2020");
-        fechas.add("01-12-2020");
-        fechas.add("02-12-2020");
-        fechas.add("03-12-2020");
-        fechas.add("04-12-2020");
-        fechas.add("05-12-2020");
-        fechas.add("06-12-2020");
-
-        fechas.add("07-12-2020");
-        fechas.add("08-12-2020");
-        fechas.add("09-12-2020");
-        fechas.add("10-12-2020");
-        fechas.add("11-12-2020");
-        fechas.add("12-12-2020");*/
-
-        fechas.add("11-03-2023");
-
-
+        fechas.add("01-03-2024");
+        fechas.add("02-03-2024");
+        fechas.add("03-03-2024");
+        fechas.add("04-03-2024");
+        fechas.add("05-03-2024");
+        fechas.add("06-03-2024");
+        fechas.add("07-03-2024");
+        fechas.add("08-03-2024");
+        fechas.add("09-03-2024");
+        fechas.add("10-03-2024");
+        fechas.add("11-03-2024");
+        fechas.add("12-03-2024");
+        fechas.add("13-03-2024");
+        fechas.add("14-03-2024");
+        fechas.add("15-03-2024");
+        fechas.add("16-03-2024");
+        fechas.add("17-03-2024");
+        fechas.add("18-03-2024");
+        fechas.add("19-03-2024");
+        fechas.add("20-03-2024");
+        fechas.add("21-03-2024");
+        fechas.add("22-03-2024");
+        fechas.add("23-03-2024");
+        fechas.add("24-03-2024");
+        fechas.add("25-03-2024");
+        fechas.add("26-03-2024");
+        fechas.add("27-03-2024");
+        fechas.add("28-03-2024");
+        fechas.add("29-03-2024");
+        fechas.add("30-03-2024");
+        fechas.add("31-03-2024");
+        
     }
 
 
     public void BuscarNumerosGanadores(WebDriver driver) {
+
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TIME_WAIT));
 
         for (int d = 0; d < fechas.size(); d++) {
 
@@ -203,15 +207,23 @@ public class LoteriaPage {
                 By segundoPremioLocator = By.xpath("//*/span[text()='" + Loteria.get(i) + "']//parent::node()//parent::node()//parent::node()//parent::node()//span[@class='score '][2]");
                 By tercerPremioLocator = By.xpath("//*/span[text()='" + Loteria.get(i) + "']//parent::node()//parent::node()//parent::node()//parent::node()//span[@class='score '][3]");
                 By fechaLocator = By.xpath("//*/span[text()='" + Loteria.get(i) + "']//parent::node()//parent::node()//parent::node()//parent::node()//*/span[@class='session-date session-badge']");
+                By msjRetrasoBillete = By.xpath("//*/span[text()='" + Loteria.get(i) + "']//parent::node()//parent::node()//parent::node()//parent::node()/..//b[normalize-space()='Retraso: billetes']");
+                By locatorLoteria = By.xpath("//*/span[text()='" + Loteria.get(i) + "']");
+
 
                 Actions actions = new Actions(driver);
-                driver.navigate().to(manejador.getInstancia().url + fechaBusqueda);
-                //   driver.get(manejador.getInstancia().url + fechaBusqueda);
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-                wait.until(ExpectedConditions.presenceOfElementLocated(primerPremioLocator));
 
-                System.out.println("fechaLocator" + driver.findElement(fechaLocator).getText());
-                System.out.println("fechaBusqueda" + fechaBusqueda);
+                try {
+                    driver.get(manejador.getInstancia().url + fechaBusqueda);
+                } catch (Exception e) {
+                    driver.get(manejador.getInstancia().url + fechaBusqueda);
+
+                }
+
+                //   driver.get(manejador.getInstancia().url + fechaBusqueda);
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIME_WAIT));
+                wait.until(ExpectedConditions.presenceOfElementLocated(locatorLoteria));
+
 
                 if (driver.findElement(fechaLocator).getText().equals(diaMesBusqueda)) {
                     if (driver.findElement(primerPremioLocator).isDisplayed()) {
@@ -259,11 +271,6 @@ public class LoteriaPage {
 
                     } else if (dia.equals("01") && mes.equals("03")) {
 
-                        diaAntes = "28";
-                        mes = String.valueOf(Integer.parseInt(mes) - 1);
-
-                    } else if (dia.equals("01") && mes.equals("03") && year.equals("2020")) {
-
                         diaAntes = "29";
                         mes = String.valueOf(Integer.parseInt(mes) - 1);
 
@@ -273,10 +280,17 @@ public class LoteriaPage {
                     }
 
                     fechaAntes = diaAntes + "-" + mes + "-" + year;
-                    driver.navigate().to(manejador.getInstancia().url + fechaAntes);
+                    try {
+                        driver.get(manejador.getInstancia().url + fechaAntes);
+
+                    } catch (Exception e) {
+                        driver.get(manejador.getInstancia().url + fechaAntes);
+
+                    }
+
                     //   driver.get(manejador.getInstancia().url + fechaAntes);
 
-                    wait.until(ExpectedConditions.presenceOfElementLocated(primerPremioLocator));
+                    wait.until(ExpectedConditions.presenceOfElementLocated(locatorLoteria));
 
                     if (driver.findElement(primerPremioLocator).isDisplayed()) {
                         actions.moveToElement(driver.findElement(primerPremioLocator));
@@ -289,17 +303,8 @@ public class LoteriaPage {
 
                     }
 
-                    numerosDeHoy.add("CALL Insertar_Numeros('" + nombreLoteria.get(Loteria.get(i)) + "'," + primerPremio + "," + segundoPremio + "," + tercerPremio + "," + despuesDel + ",'" + diaSemana + "','" + fechaLoteria + "');");
+                    numerosDeHoy.append("CALL Insertar_Numeros('").append(nombreLoteria.get(Loteria.get(i))).append("',").append(primerPremio).append(",").append(segundoPremio).append(",").append(tercerPremio).append(",").append(despuesDel).append(",'").append(diaSemana).append("','").append(fechaLoteria).append("');\n");
 
-                    System.out.println("Loteria " + Loteria.get(i));
-                    System.out.println("Loteria " + nombreLoteria.get(Loteria.get(i)));
-                    System.out.println("primerPremio " + primerPremio);
-                    System.out.println("segundoPremio " + segundoPremio);
-                    System.out.println("tercerPremio " + tercerPremio);
-                    System.out.println("despuesDel " + despuesDel);
-                    System.out.println("diaSemana " + diaSemana);
-                    System.out.println("fechaLoteria " + fechaLoteria);
-                    System.out.println("numeros de hoy " + numerosDeHoy.toString());
 
                 } else {
 
